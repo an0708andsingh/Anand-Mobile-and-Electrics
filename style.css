@@ -1,0 +1,471 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f5f9; /* Light gray background */
+    color: #1f2937; /* Dark gray text */
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #f59e0b; /* Amber hover */
+    transition: 0.3s;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1e40af; /* Blue shade */
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .logo img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 2px;
+}
+
+nav .nav-links a {
+    margin-left: 1.5rem;
+    font-weight: 600;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 6rem 2rem 4rem 2rem;
+    color: #ffffff;
+    background: linear-gradient(to right, #1e3a8a, #1e40af);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* Cards (Products / Services / Testimonials) */
+.card, .card-service, .section-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .card-service:hover, .section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card h3, .card-service h3 {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+}
+
+.card p, .card-service p {
+    color: #4b5563;
+}
+
+/* Buttons */
+button {
+    background-color: #1e40af;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Forms */
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #1e40af;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e40af;
+    color: #ffffff;
+    margin-top: 4rem;
+}
+
+/* Responsive Grid */
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 640px) {
+    .sm-grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg-grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Misc Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.p-6 {
+    padding: 1.5rem;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.rounded-lg {
+    border-radius: 0.75rem;
+}
+
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.shadow {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+/* Color Classes */
+.text-blue-900 { color: #1e3a8a; }
+.text-blue-600 { color: #2563eb; }
+.bg-blue-950 { background-color: #1e3a8a; }
+.bg-blue-900 { background-color: #1e40af; }
+.bg-slate-100 { background-color: #f1f5f9; }
+
+/* =======================
+   General Styles
+======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f5f9;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* =======================
+   Navbar
+======================= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1e40af;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav .logo img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 2px;
+}
+
+nav .nav-links a {
+    margin-left: 1.5rem;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav .nav-links a:hover {
+    color: #f59e0b; /* amber hover */
+}
+
+/* =======================
+   Header Section
+======================= */
+header {
+    text-align: center;
+    padding: 6rem 2rem 4rem 2rem;
+    color: #ffffff;
+    background: linear-gradient(to right, #1e3a8a, #1e40af);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* =======================
+   Main Content
+======================= */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+/* =======================
+   Cards (Services, Products, Testimonials)
+======================= */
+.card, .card-service, .section-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .card-service:hover, .section-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.card h3, .card-service h3 {
+    font-size: 1.5rem;
+    color: #1e3a8a;
+    margin-bottom: 0.5rem;
+}
+
+.card p, .card-service p {
+    color: #4b5563;
+}
+
+/* =======================
+   Buttons
+======================= */
+button {
+    background-color: #1e40af;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* =======================
+   Forms
+======================= */
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #cbd5e1;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #1e40af;
+}
+
+/* =======================
+   Footer
+======================= */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e40af;
+    color: #ffffff;
+    margin-top: 4rem;
+}
+
+/* =======================
+   Responsive Grid
+======================= */
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 640px) {
+    .sm-grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg-grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* =======================
+   Utility Classes
+======================= */
+.text-center {
+    text-align: center;
+}
+
+.mt-4 { margin-top: 1rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.p-6 { padding: 1.5rem; }
+.p-8 { padding: 2rem; }
+
+.rounded-lg { border-radius: 0.75rem; }
+.rounded-2xl { border-radius: 1rem; }
+.shadow { box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+
+.italic { font-style: italic; }
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+
+/* =======================
+   Color Classes
+======================= */
+.text-blue-900 { color: #1e3a8a; }
+.text-blue-600 { color: #2563eb; }
+.bg-blue-950 { background-color: #1e3a8a; }
+.bg-blue-900 { background-color: #1e40af; }
+.bg-slate-100 { background-color: #f1f5f9; }
+
+
+/* Marquee Styles - New & Improved */
+.marquee-container {
+    background-color: #facc15; /* A vibrant yellow background */
+    color: #1a237e; /* The deep blue from the brand */
+    padding: 0.75rem 0; /* Increased vertical padding */
+    font-weight: 700; /* Bolder font */
+    font-size: 1.125rem; /* Larger text size */
+    overflow: hidden;
+    position: relative;
+    border-top: 2px solid #fff; /* A white border for extra pop */
+    border-bottom: 2px solid #fff;
+}
+
+.marquee-content {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee-animation 20s linear infinite; /* A smoother animation */
+}
+
+.marquee-content span {
+    padding: 0 2rem; /* Spacing between messages */
+    flex-shrink: 0;
+}
+
+.marquee-content .separator {
+    color: #ef4444; /* The red from the hero section, for consistency */
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes marquee-animation {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Pause animation on hover */
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
