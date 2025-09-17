@@ -46,3 +46,22 @@ This project is a complete front-end website for **Anand Mobile & Electrics**, a
 ---
 
 ### 📂 File Structure
+
+anand-mobile/
+├── about.html
+├── contact.html
+├── index.html
+├── products.html
+├── services.html
+├── logo.png
+├── offer1.jpg
+├── offer2.jpg
+├── offer3.jpg
+├── ... (other images)
+└── style.css
+
+---
+
+### ✍️ Author
+
+- **Singh Anand** - (an0708andsingh) - Feel free to connect!
